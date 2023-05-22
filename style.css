@@ -1,0 +1,129 @@
+:root{
+    --Marineblue: hsl(213, 96%, 18%);
+    --Purplishblue: hsl(243, 100%, 62%);
+    --Pastelblue: hsl(228, 100%, 84%);
+    --Lightblue: hsl(206, 94%, 87%);
+    --Strawberryred: hsl(354, 84%, 57%);
+    --Coolgray: hsl(231, 11%, 63%);
+    --Lightgray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+    --UbuntuBold : "UbuntuBold";
+    --UbuntuMedium: "UbuntuMedium";
+    --UbuntuRegular:"UbuntuRegular";
+}
+@font-face{
+    font-family : UbuntuBold;
+    src: url(./assets/fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family:UbuntuMedium ;
+    src: url(./assets/fonts/Ubuntu-Medium.ttf);
+}
+@font-face{
+    font-family: UbuntuRegular;
+    src:url(./assets/fonts/Ubuntu-Regular.ttf)
+}
+
+@media(max-width:450px){
+div.header{
+    padding-top: 20px;
+    padding-right: 90px;
+    font-family: var(--UbuntuRegular);
+    font-size: 20px;
+    list-style-type: none;
+    background-image: url(./assets/images/bg-sidebar-mobile.svg);
+    background-repeat: no-repeat; 
+    height: 150px;     
+}
+div.pages{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 27%;
+}
+a {
+text-decoration: none;
+color: black;
+}
+a li{
+    border: 1.6px solid var(--White);
+    color: var(--White);
+    padding-top: 4px;
+    text-align: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+a li:hover{
+    background-color:var(--Lightgray);
+    color: black;
+}
+img.mobileview{
+    width: 375px;
+}
+img.desktopview{
+    display: none;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--Lightgray);
+}
+.form-div{
+    background-color: var(--Alabaster);
+    width: 88%;
+    height: 350px;
+    margin-left: 18px;
+    margin-top: -90px;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 160px;
+}
+.form-div h3{
+    font-family: var(--UbuntuBold);
+    font-size: 26px;
+    margin: 0px;
+    
+}
+.form-description{
+    font-family: var(--UbuntuRegular);
+    color: var(--Coolgray);
+    font-size: 20px;
+    margin-top: 10px;
+}
+label{
+    font-family: var(--UbuntuMedium);
+}
+input{
+    width:88%;
+    margin-bottom: 12px;
+    height: 30px;
+    border-radius: 6px;
+    border: 3px solid var(--Lightgray);
+}
+::placeholder{
+    font-family: var(--UbuntuMedium);
+    padding-left: 10px;
+}
+.footer{
+    background-color: var(--White);
+    height: 100px;
+}
+button{
+    background-color: var(--Marineblue);
+    color: var(--White);
+    margin-top: 30px;
+    margin-left:250px;
+    padding:10px;
+    border-radius: 10px;
+}
+}
+@media(min-width:451px){
+    img.mobileview{
+        display: none;
+    }
+}
+
+
